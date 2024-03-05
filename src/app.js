@@ -12,8 +12,8 @@ const app = express();
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /public
 app.use(express.urlencoded({ extended: false }));
-app.use(logger('dev'));
 app.use(express.json());
+app.use(logger('dev'));
 app.use(cookieParser());
 app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 
@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
 
-
+// _method=PUT
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
 const otherRouter = require('./routes/other.routes'); // Rutas main
