@@ -460,3 +460,23 @@ textarea.form-input {
     margin: auto;
   }
 }
+
+
+
+
+/* ERRORS MESSAGE */
+.msg-error {
+  color: red;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.input-valid {
+  border:1px solid var(--green)
+}
+
+
+.input-invalid {
+  border:1px solid red
+}
